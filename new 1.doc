@@ -1,0 +1,19 @@
+Topics Python Installation :
+----------------------------
+ঝামেলা মুক্ত বা সহজে পাইথন এর সকল dependency ইনস্টল করতে শুধুমাত্র Anaconda Setup দিলেই হবে।
+Anaconda কি ? Anaconda হল free & open source distribution, পাইথন এবং R প্রোগ্রামিং ভাষাগুলির জন্য।
+Anaconda দেয়ার সুবিধা কি ? সুবিধা হল নতুন করে কোন কিছু Install দিতে হবে না, Python এর  সবকিছু এর ভেতরেই আছে।
+
+Anaconda download link: https://www.anaconda.com/download/   
+[NB: Anaconda 5.3 এর Under এ  Python 3.7 version এ  click করলে হবে অথবা তার নিচে যার যে Version তা  click করলে download হবে] 
+
+Install & Use :
+	- Download এর পর সাধারন সফটওয়্যার এর মত করে Setup দিবেন।
+	- Setup শেষ হলে ,ওপেন করার জন্য Start Menu ->  Anaconda3 -> Anaconda Prompt ,তারপর কালো Anaconda Prompt ওপেন হলে ,সেখানে লিখবেন "jupyter notebook" তারপর  Enter.
+	(তাহলে ব্রাউজার এ Jupyter Notebook Open হবে)
+
+	
+
+Jupyter Notebook একটি ওপেন সোর্স ওয়েব অ্যাপ্লিকেশন যা আপনাকে Coding, visualizations(ফলাফল প্রদর্শন ) করতে এবং documents Share করতে দেয়।
+জুপিটার নোটবুক কি ব্যবহার করতেই হবে? উত্তরঃ না, আপনি চাইলেও অন্য Compiler বা Interpreter দিয়েও কাজ করতে পারবেন। 
+[NB: সহজ কথায় Compiler বা Interpreter এর মত কাজ করে, সাথে বাড়তি অনেক অনেক অনেক সুবিধা দেয় ]

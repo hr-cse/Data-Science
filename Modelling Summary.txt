@@ -1,0 +1,121 @@
+
+--------------------------------------------------------------------------
+[predict variable always be numeric] | [independent variables are numeric]
+--------------------------------------------------------------------------
+1.linear Regression
+	-y^ = mx + c
+
+2.Multiple Regression
+	-y^ = m1x1 + m2x2 + ......... MnXn + c
+
+3.Ordinary Least Square
+	-SUM( actual value - model value)^2
+
+4.R Squared[Goodness of fit]
+
+	-R^2 = 1 - SSres/SStot [if R = 1 or near to 1 then this model is best]
+	[THAT MEANS GREATER IS BETTER]
+	
+	-SSresidual = SUM( actual value - model value)^2
+	-SStot = SUM( actual value - average value)^2
+
+5.Adjusted R^2 [Good One]
+	-adj R^2 = 1 - (1 - R^2)*((n - 1)/(n - p - 1))
+	[p = number of regressors(also p is a number of independent variable), n = sample size]
+
+
+6.Gretl ?
+--------------------------------------------------------
+	-GNU Regession, Econometrics and Time-series Library
+	[Similar -> sas, spss]
+	[also work with same as R, Python]
+
+7.[SINGLE REGRESSION]
+	-model > Ordinary Least Square [ *for regression ]
+		-regressors > means independent variable
+		-dependent > what we predict 		
+		-under model > Graphs or (analysis > forecast) etc.
+
+8. [MULTIPLE REGRESSION]
+	
+	-Dummy variables
+	-Model Building Methods
+		1.All-in:
+			Prior knowledge | preparing for backward | for collect knowledge not predict
+		Stepwise Regression:
+			2.Backward Elimination:
+				s1: select a significance level to stay in the model (e.g. SL = 0.05 )
+				s2.fit the full model with all possible predictors
+				s3.consider the predictor with the highest p-value .
+					if p > SL:
+						goto s4
+					else:
+						goto FIN
+				s4: remove the predictor
+				s5: fit model without this variable*
+				FIN: final model
+			3.Forward Selection
+			4.Bidirectional Elimination
+		5.Score Comparison
+
+	-Multiple Regression Procedure: [** NB: always try to calculate under /unit not value.]
+		-seperate dummy variables:
+			-menu > Add > dummies for descrete variables > encode all values
+			- after creating > edit attributes(change name)
+		-same as 7
+			-star(*) meaning(less than):
+					- *** means 0.01(1%)
+					- ** means 0.05(5%)
+					- * means 0.1(10%)
+		-after create model:
+			-Graphs > fitted, actual plot
+				[Against last remove predictor]
+			- Plus or minus means:
+				(+)value means if increase then increase
+				(-)value means if increase then decrease
+		- finaly create model then check adjusted R^2(max) value. then select final model.
+
+	
+9.LOGISTIC REGRESSION: [generally all logistic regression is multiple logistic regression that's' why it's' called just logistic regression]
+[MORE THAN ONE INDEPENDENT VARIABLE AND ALSO PREDICT YES/NO TYPE ANSWER, THEN USE LOGISTIC REGRESSION]
+	-y = b0 + b1x
+	-p = 1/(1 + e^(-y)) [SIGMOID FUNCTION]
+	-ln(p/(1-p)) = b0 + b1x [** LOGISTIC REGRESSION FORMULA]
+	-ln(p/(1-p)) = b0 + b1x1 + b2x2 + ......... + BnXn [** LOGISTIC REGRESSION FORMULA]
+		 ..
+		'													'
+		:
+	  ..' 																	'
+
+	WHY LR ?
+	---------
+		-predict probability(p^)
+
+	**-model > limited dependent variable > logit > binary
+		-put binary variable into dependent variable box
+		-analysis > forecast etc.
+		-new variable create click(+) sign. etc 
+
+	-False Positive and Negative:
+		-positive [type 1 error] > WE PREDICT POSITIVE BUT IT'S ACTUALLY NEGATIVE'
+		-negative [type 2 error] > WE PREDICT NEGATIVE BUT IT'S ACTUALLY POSITIVE' [**** DANGER ERROR]
+
+	-CONFIUSION MATRIX:
+
+		  	| Y^0	  Y^1
+		-----------------
+		Y0	|Y        N(i)
+			|
+		Y1 	|N(ii)    Y
+
+		Accuracy rate : Correct(Y)/Total
+		Error rate : Wrong(N)/Total
+	-Z error:[Z MEANS STANDARDIZE COEEFFICIENT]
+		-coefficient/std.error
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+# Log started 2018-10-01 22:39
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "F:\Python\Data Science\[FreeTutorials.Us] data-science-------------(Master One)----OK\10 Multiple Linear Regression\50-Startups.csv"
+dummify State
+rename 6 NewYork
+rename 7 California
+# model 1
+ols Profit 0 RDSpend Administration MarketingSpend NewYork
+# model 2
+ols Profit 0 RDSpend MarketingSpend NewYork
+# model 3
+ols Profit 0 RDSpend MarketingSpend
+# model 4
+ols Profit 0 RDSpend
+# model 5
+ols Profit 0 RDSpend Administration MarketingSpend State California
+# model 6
+ols Profit 0 RDSpend MarketingSpend
+coeffsum  MarketingSpend RDSpend
+modtest --normality
+fcast 1 50 --static
