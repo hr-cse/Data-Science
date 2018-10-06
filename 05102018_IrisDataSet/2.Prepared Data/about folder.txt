@@ -1,0 +1,6 @@
+one of the eassy way to find error or blanck value :
+	-  (ctrl+ f) == double comma(,,)
+	- eassy to find empty cell
+
+** open csv file with (gretl) 
+	- help to find error with notification

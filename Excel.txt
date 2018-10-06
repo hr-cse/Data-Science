@@ -1,0 +1,3 @@
+-double click right bottom corner for autocomplete fill data.
+-ctrl + down or ctrl + up 
+-ctrl + shift + down [select all]

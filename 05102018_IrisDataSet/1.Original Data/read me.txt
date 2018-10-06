@@ -1,0 +1,8 @@
+not necessary 
+------------------
+1. csv file 
+2. if not csv :
+	-convert csv(change textension)
+	or
+	-export data base table to flat file
+		-sql import export (use sql software) 

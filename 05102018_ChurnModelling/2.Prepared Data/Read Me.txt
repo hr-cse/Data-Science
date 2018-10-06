@@ -1,0 +1,3 @@
+1. First convert file into .txt file.(csv)
+2. After file->open->then ,select all column then select (text).
+3.Select indivisual column then from ->Data menue -> text to column -> general 

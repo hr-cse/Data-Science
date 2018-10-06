@@ -116,6 +116,48 @@
 
 
 
+10.GEODEMOGRAPHIC SEGMENTATION: [NB: USING LOGISTIC REGRESSION] [NB: recall section for concept ]
+	[jodi onek gulo information theke kichu information niye , baki sokol information er sathe tulona kora hoy,
+	 tokhon seti geodemographic segmentaion bujay]
 
+11.TRANSFORMATIONS: [NB: for independent variables (IVs)]
+	TYPE:
+		-sqrt
+		-Square
+		-log10():
+			-add variable:
+				Log_Balance = log10(Balance + 1)	[NB: if Balance is zero then get error thats why add 1]
 
+12.DRIVED VARIABLE:
+	-Add variable:
+		-variable_name = Balance/Age . etc
 
+13.MULTIPLECOLINEARITY:
+	-After Creating model then :
+			- in model page Analysis > colinearity
+
+14.CORELATION MATRIX AND MULTIPLECOLINEARITY INTUITION:
+	-VIEW > CORELATION MATRIX [relation different variable]
+
+15.Accuracy paradox
+
+16.Cumulative Accuracy Profile (CAP):
+
+17.Testing vs Training:
+	-seperate some sample data from main data for testing , then training model create.
+	-after create training model create then test model , using testing data.
+
+	why?
+	--------
+	-its prove the model accuracy .and we know how good our model is.
+
+18.Odds Ratio:
+	Lose: Win Odds: L/W
+	Pwin = W/(W+L)
+	1-Pwin = L/(w+L)	[Plose]
+	Pwin/1-Pwin = W/L
+	W/L = Pwin/(1-Pwin)
+
+	Win: Lose Odds = p/(1-p)
+
+	https://rechneronline.de/function-graphs/
