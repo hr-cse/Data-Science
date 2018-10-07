@@ -1,0 +1,28 @@
+# Log started 2018-10-06 14:07
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "F:\github\Data-Science\05102018_ChurnModelling\2.Prepared Data\Churn-Modelling-With Test Data Appended.csv"
+dummify Gender
+dummify Geography
+rename 15 Female
+rename 16 Male
+rename 17 France
+rename 18 Spain
+rename 19 Germany
+# model 1
+logit Exited 0 Germany Female CreditScore Tenure Age IsActiveMember \
+  NumOfProducts --p-values
+Log_Balance = log10(Balance + 1)
+# model 2
+logit Exited 0 Germany Female CreditScore Tenure Age IsActiveMember \
+  NumOfProducts Log_Balance --p-values
+fcast 10001 11000 --static
+# model 2
+fcast 10001 11000 P_Hat_TestData
+# store \
+  "F:\github\Data-Science\05102018_ChurnModelling\2.Prepared Data\Churn-Modelling-With Test Data Appended-Forecast.csv" \
+   RowNumber P_Hat_TestData --csv
+# store \
+  "F:\github\Data-Science\05102018_ChurnModelling\2.Prepared Data\Churn-Modelling.gdt" \
+  --gzipped=1

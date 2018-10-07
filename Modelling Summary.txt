@@ -142,6 +142,15 @@
 15.Accuracy paradox
 
 16.Cumulative Accuracy Profile (CAP):
+	-Rule:[ X is number of random sample]
+		90% < X < 100% -Too Good
+		80% < X < 90% - Very Good
+		70% < X < 80% - Good
+		60% < X < 70% - Poor
+		X < 60 	- Rubbish Model
+			
+	-Budget Constraints
+	-Efficiency
 
 17.Testing vs Training:
 	-seperate some sample data from main data for testing , then training model create.
@@ -161,3 +170,42 @@
 	Win: Lose Odds = p/(1-p)
 
 	https://rechneronline.de/function-graphs/
+
+	** Odds Ratio vs coefficient in a logistic:
+		Win: Lose Odds = p/(1-p)
+		Odds = p/(1-p)
+
+		we know,
+			 ln(p/(1-p)) = b0 + b1x1 + b2x2 + ......... + BnXn
+			=> ln(Odds) = b0 + b1x1 + b2x2 + ......... + BnXn 
+			=> e^(ln(Odds)) = e^(b0 + b1x1 + b2x2 + ......... + BnXn)
+			=> Odds = e^b0 * e^(b1x1) * e^(b2x2) * ......... * e^(BnXn)
+
+			now,
+				e^(b1x1) if we increse independent variable 1 unit then
+				= e^(b1(x1+1))
+				= e^(b1x1) + e^b1
+		so, if increase an independent variable Xi by 1 unit will,
+			increase the odds by a multiplicative factor of e^Bi 
+
+
+	USEING PROCEDURE:
+		- gretl > file > function > from library >install oodsration.
+		-create model > analysis > log odds 
+
+		then copy odds value and put model output + odds value into excel.
+		and finaly create report.
+		-----------------------------
+
+19. MODELS DETERIORATE:
+	why?
+	-Additional Factors
+	-Changes in behaviour
+	-changes in process
+	-changes in existiong Factors
+	-competitor
+	-changes in industry
+	-changes in regulations
+	-changes in product
+	-depletion
+	-spontaneous changes
