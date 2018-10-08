@@ -1,0 +1,34 @@
+1.Evaluation Of Data Science:
+
+	-Statistics[25 years ago]:
+		-gathering and cleaning data sets
+		-applying statistical methods
+			BUT
+		some years leter:
+			+growth of data
+			+radical improvement of technology
+		-extracting patterns from data
+		so that coming data mining.
+
+	-Data mining[20 years ago]:
+		+new models
+		-performing more accurate forecasts
+		thats why come predictive analytics
+
+	-Predictive Analytics[10 years ago]
+
+	-Data Science[ Now ]
+		-combination of all others
+
+2.Analysis[ use past information ] & Analytics[ for future predict]:
+	-Analysis:
+		-Qualitative
+			-Explain: How ,Why Happend.
+		-Quantitative
+			-data + how sales decreased last year/mount/days etc.
+
+	-Analytics:
+		-Qualitative
+				-intuition + analsis
+			-Quantitative
+				-formulas + algorithms.
