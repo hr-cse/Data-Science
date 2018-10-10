@@ -1,0 +1,7 @@
+-KMeans cluster for numerical variable
+-KMeans cluster for categorical variable:
+	-convert categorical variable into numerical variable using map()
+-How many cluster we make:
+	wcss- elbow method
+-Cluste Standardize:
+	-using perprocessing()
